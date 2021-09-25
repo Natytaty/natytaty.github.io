@@ -1,0 +1,31 @@
+@import "base/bootstrap-reboot";
+@import "base/fonts";
+
+.container {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+.btn {
+  font-size: 12px;
+  background: #f25822;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+}
+
+.title {
+  font-size: 45px;
+  color: #000;
+  font-weight: 600;
+}
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/brands";
+@import "blocks/about";

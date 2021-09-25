@@ -1,0 +1,41 @@
+.about {
+  background: #fafafa url(../img/about/element.png) center -195px / cover no-repeat;
+  padding: 125px 0;
+  position: relative;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-info {
+  max-width: 515px;
+  width: 100%;
+}
+
+.about-info-text {
+  font-size: 16px;
+  color: #666;
+  margin: 20px 0 35px;
+}
+
+/* .about-img {
+  max-width: 845px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right: -140px;
+  transform: translateY(-50%);
+} */
+
+/* .about-img-bg {
+  position: absolute;
+  width: 150%;
+  top: -100%;
+  left: -290px;
+  z-index: -1;
+  transform: rotate(2.09deg);
+}
+ */

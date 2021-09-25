@@ -1,0 +1,56 @@
+.promo {
+  position: relative;
+  padding: 120px 0 70px;
+  overflow: hidden;
+}
+
+.promo-info {
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+}
+
+.promo-title {
+  font-size: 60px;
+  color: #000;
+}
+
+.promo-ellipse {
+  position: absolute;
+  top: 75px;
+  left: -25px;
+}
+
+.promo-text {
+  font-size: 20px;
+  color: #888;
+  margin: 20px 0 35px;
+}
+
+.promo-img {
+  max-width: 845px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right: -290px;
+  transform: translateY(-50%);
+}
+
+.promo-start-link {
+  text-decoration: none;
+  color: #888;
+}
+
+.promo-start {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-element {
+  position: absolute;
+  top: -50px;
+  left: -115px;
+}
