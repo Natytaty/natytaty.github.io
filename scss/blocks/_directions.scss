@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.directions-wrapper {
+  display: flex;
+}
+
 .directions-content {
   max-width: 560px;
   width: 100%;
