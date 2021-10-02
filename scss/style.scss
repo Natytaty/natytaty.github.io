@@ -22,10 +22,17 @@
 .title {
   font-size: 45px;
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
+  &-small {
+    font-size: 24px;
+    margin: 25px 0 20px;
+  }
 }
 
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/brands";
 @import "blocks/about";
+@import "blocks/features";
+@import "blocks/services";
+@import "blocks/directions";
