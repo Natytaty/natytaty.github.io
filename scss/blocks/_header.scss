@@ -36,10 +36,15 @@
   justify-content: space-between;
 }
 
+.menu-item {
+  position: relative;
+}
+
 .menu-list {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  margin-right: 50px;
 }
 
 .menu-link {
@@ -47,5 +52,42 @@
   color: #000;
   &:hover {
     color: #f25822;
+  }
+}
+
+.menu-link-subnav::after {
+  content: "⌵";
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.subnav {
+  /* visibility: hidden;
+  opacity: 0; */
+  /* user-select: none;
+  pointer-events: none; */
+  display: none;
+  transition: 0.4s;
+  position: absolute;
+  background: #f25822;
+  top: 25px;
+  left: 0;
+  width: 90px;
+  list-style: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.menu-item {
+  &:hover {
+    .subnav {
+      /* visibility: visible;
+      opacity: 1; */
+      display: block;
+      /* user-select: all;
+      pointer-events: all; */
+      &:hover {
+        display: block;
+      }
+    }
   }
 }

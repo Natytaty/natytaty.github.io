@@ -1,0 +1,46 @@
+.clients {
+  padding: 50px 0;
+}
+
+.clients-top {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clients-slider {
+  margin-top: 50px;
+  .slick-list {
+    padding-bottom: 40px !important;
+  }
+}
+
+.clients-item {
+  border: 2px solid #eeeeee;
+  height: 270px;
+  padding: 25px 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-right: 30px;
+  &:hover {
+    border: none;
+    box-shadow: 15px 25px 60px -10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.clients-item-img {
+  margin: 30px 0 10px;
+  border-radius: 50%;
+}
+
+.clients-item-name {
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.clients-item-position {
+  color: #888;
+  font-size: 13px;
+}

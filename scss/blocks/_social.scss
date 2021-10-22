@@ -1,0 +1,35 @@
+.social-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.social-item {
+  align-items: center;
+}
+
+.social-link {
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.3s;
+  position: relative;
+  display: inline-block;
+  &:hover {
+    background: #f25822;
+    .social-icon {
+      color: #fff;
+    }
+  }
+}
+
+.social-icon {
+  color: #aaaaaa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

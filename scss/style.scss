@@ -1,33 +1,15 @@
 @import "base/bootstrap-reboot";
+@import "base/vars";
 @import "base/fonts";
+@import "base/icons";
+@import "libs/slick";
 
-.container {
-  max-width: 1190px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
-  position: relative;
-}
-
-.btn {
-  font-size: 12px;
-  background: #f25822;
-  border-radius: 30px;
-  color: #fff;
-  border: none;
-  padding: 12px 30px;
-  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
-}
-
-.title {
-  font-size: 45px;
-  color: #000;
-  font-weight: 700;
-  &-small {
-    font-size: 24px;
-    margin: 25px 0 20px;
-  }
-}
+@import "blocks/titles";
+@import "blocks/buttons";
+@import "blocks/container";
+@import "blocks/text";
+@import "blocks/slick-dots";
+@import "blocks/social";
 
 @import "blocks/header";
 @import "blocks/promo";
@@ -36,3 +18,20 @@
 @import "blocks/features";
 @import "blocks/services";
 @import "blocks/directions";
+@import "blocks/facts";
+@import "blocks/speed";
+@import "blocks/plans";
+@import "blocks/team";
+@import "blocks/clients";
+@import "blocks/news";
+@import "blocks/footer";
+@import "blocks/main";
+
+@import "media/header-media";
+@import "media/promo-media";
+@import "media/brands-media";
+@import "media/about-media";
+@import "media/titles-media";
+@import "media/buttons-media";
+@import "media/text-media";
+@import "media/features-media";

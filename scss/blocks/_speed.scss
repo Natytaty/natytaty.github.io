@@ -1,0 +1,47 @@
+.speed {
+  padding: 140px 0 170px;
+}
+
+.speed-text {
+  width: 85%;
+  margin-bottom: 55px;
+}
+
+.speed-wrapper {
+  max-width: 570px;
+  width: 100%;
+}
+
+.speed-form {
+  input {
+    background: #eee;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: #666666;
+    font-size: 13px;
+    padding: 0 20px;
+    &::placeholder {
+      color: #666666;
+      font-size: 11px;
+    }
+    &:nth-child(1) {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+    &:nth-child(2) {
+      border-left: 2px solid #ccc;
+      margin-left: -4px;
+      border-bottom-right-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+  }
+}
+
+.speed-img {
+  position: absolute;
+  top: -180px;
+  right: -180px;
+  z-index: -1;
+}

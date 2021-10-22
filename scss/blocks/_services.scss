@@ -1,5 +1,6 @@
 .services {
   padding: 90px 0 100px;
+  background: #fafafa;
 }
 
 .services-top {
@@ -10,32 +11,37 @@
 }
 
 .services-text {
-  color: #666666;
-  font-size: 16px;
   margin-top: 20px;
 }
 
-.services-wraper {
+.services-wrapper {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 55px;
 }
 
-.service {
+.services-item {
   max-width: 370px;
   width: 100%;
   text-align: center;
   padding-bottom: 50px;
-  background: #ffffff;
-  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+  background: #ffff;
+  &:hover {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+  }
 }
 
-.service-text {
+.services-item-text {
   color: #aaa;
   font-size: 15px;
   margin: 20px 0 40px;
   display: inline-block;
   max-width: 310px;
   width: 100%;
+}
+
+.services-btn::after {
+  content: "\1433";
+  margin-left: 5px;
 }

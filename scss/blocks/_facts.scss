@@ -1,0 +1,41 @@
+.facts {
+  padding: 100px 0;
+}
+
+.facts-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eeeeee;
+  padding: 40px 70px;
+}
+
+.facts-item {
+  text-align: center;
+}
+
+.facts-number {
+  font-size: 70px;
+  font-weight: 700;
+  color: #666;
+}
+
+.facts-text {
+  font-size: 18px;
+  color: #666;
+}
+
+.facts-ellipse {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f3602d;
+}
+
+.facts-ellipse-green {
+  background: #149211;
+}
+
+.facts-ellipse-yellow {
+  background: #ffc700;
+}

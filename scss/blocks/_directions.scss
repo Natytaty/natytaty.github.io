@@ -4,6 +4,8 @@
 
 .directions-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .directions-content {
@@ -13,22 +15,21 @@
 }
 
 .directions-text {
-  color: #666;
-  font-size: 16px;
   margin-bottom: 80px;
 }
 
-.direction {
+.directions-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px 15px 30px;
   margin-bottom: 30px;
-  background: #ffffff;
-  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+  &:hover {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+  }
 }
 
-.direction-icon-bg {
+.directions-icon-bg {
   max-width: 100px;
   width: 100%;
   height: 100px;
@@ -37,40 +38,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: relative; */
 }
 
-/* .direction-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-.direction:nth-child(2) {
-  .direction-icon-bg {
+.directions-item:nth-child(2) {
+  .directions-icon-bg {
     background: rgba(20, 146, 17, 0.28);
   }
 }
 
-.direction:nth-child(3) {
-  .direction-icon-bg {
+.directions-item:nth-child(3) {
+  .directions-icon-bg {
     background: rgba(255, 205, 29, 0.24);
   }
 }
 
-.direction-title {
+.directions-item-title {
   font-size: 20px;
   color: #000;
   font-weight: 700;
 }
 
-.direction-text {
+.directions-item-text {
   font-size: 15px;
   color: #666;
 }
 
-.direction-content {
+.directions-item-content {
   margin-left: 30px;
 }
 
@@ -78,4 +71,5 @@
   position: absolute;
   top: 0;
   left: -360px;
+  z-index: -1;
 }

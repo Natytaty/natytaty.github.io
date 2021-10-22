@@ -1,0 +1,16 @@
+@media (max-width: 1120px) {
+  .brands {
+    padding: 40px 0;
+  }
+
+  .brands-img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  .brands-logo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
