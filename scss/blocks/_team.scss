@@ -16,7 +16,9 @@
 }
 
 .team-item {
-  padding: 50px 70px;
+  padding: 50px 10px;
+  max-width: 250px;
+  width: 100%;
   text-align: center;
   &:hover {
     box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.1);
@@ -39,5 +41,5 @@
 }
 
 .team-social-list {
-  justify-content: space-between;
+  justify-content: center;
 }

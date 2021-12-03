@@ -5,12 +5,13 @@
 .features-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .features-item {
   max-width: 370px;
   width: 100%;
-  padding: 40px 30px 25px;
+  padding: 40px 10px 25px;
   &:hover {
     box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
   }
@@ -47,6 +48,7 @@
   color: #666;
   font-size: 15px;
   margin-bottom: 25px;
+  width: 90%;
 }
 
 .features-item-btn {

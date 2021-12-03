@@ -1,0 +1,68 @@
+@media (max-width: 1000px) {
+  .plans {
+    padding-top: 60px;
+    height: 800px;
+  }
+
+  .plans-text {
+    margin-bottom: 50px;
+  }
+  .plans-card-title {
+    font-size: 20px;
+  }
+
+  .plans-card-price span {
+    font-size: 50px;
+  }
+
+  .plans-card-list {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  .plans-card {
+    height: 450px;
+  }
+
+  .plans {
+    height: 750px;
+  }
+}
+
+@media (max-width: 750px) {
+  .plans-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .plans {
+    height: auto;
+  }
+  .plans-card {
+    height: auto;
+    &:hover {
+      box-shadow: none;
+      height: auto;
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .plans {
+    padding: 30px 0;
+  }
+
+  .plans-card-price span {
+    font-size: 40px;
+  }
+
+  .plans-btn {
+    padding: 10px 30px;
+  }
+
+  .plans-card {
+    padding: 30px 10px;
+  }
+}

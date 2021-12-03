@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <div class="work"></div>
     <header class="header">
       <div class="container">
         <div class="header-wrapper">
@@ -20,16 +19,18 @@
             <nav class="menu">
               <ul class="menu-list">
                 <li class="menu-item">
-                  <a class="menu-link" href="">Home</a>
+                  <a class="menu-link" href="#promo">Home</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="">About Us</a>
+                  <a class="menu-link" href="#about">About Us</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="">Services</a>
+                  <a class="menu-link" href="#services">Services</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link menu-link-subnav" href="">Features</a>
+                  <a class="menu-link menu-link-subnav" href="#features"
+                    >Features</a
+                  >
                   <ul class="subnav">
                     <li class="subnav-item">
                       <a href="" class="subnav-link">Lorem</a>
@@ -43,23 +44,29 @@
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="">Team</a>
+                  <a class="menu-link" href="#team">Team</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="">Blog</a>
+                  <a class="menu-link" href="#news">Blog</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="">Contact</a>
+                  <a class="menu-link" href="#footer">Contact</a>
                 </li>
               </ul>
             </nav>
-            <button class="btn">Get Started</button>
+            <div class="menu-shadow"></div>
+            <div class="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <button class="btn header-btn">Get Started</button>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="promo">
+      <section class="promo" id="promo">
         <div class="container">
           <div class="promo-info">
             <h1 class="promo-title">
@@ -76,11 +83,9 @@
             </p>
             <div class="promo-start">
               <button class="btn">Start Now</button>
-              <a class="promo-start-btn" href="">
-                <img class="btn-video" src="img/promo/icon.png" alt="Icon" />
-              </a>
               <a class="promo-start-link" href="#">
-                <p class="promo-start-link-text">Watch Video</p>
+                <img class="btn-video" src="img/promo/icon.png" alt="Icon" />
+                Watch Video
               </a>
             </div>
             <img
@@ -120,11 +125,11 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about-wrapper">
             <div class="about-info">
-              <h2 class="title">
+              <h2 class="title about-title">
                 Perfect Solution For <br />
                 Your Business
               </h2>
@@ -140,7 +145,7 @@
           </div>
         </div>
       </section>
-      <section class="features">
+      <section class="features" id="features">
         <div class="container">
           <div class="features-wrapper">
             <div class="features-item">
@@ -157,7 +162,11 @@
                 level overviews.
               </p>
               <button class="features-item-btn">Read More...</button>
-              <p class="additional-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iusto cupiditate animi rem adipisci suscipit iure quisquam quis dolorum a.</p>
+              <p class="additional-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                iusto cupiditate animi rem adipisci suscipit iure quisquam quis
+                dolorum a.
+              </p>
             </div>
             <div class="features-item">
               <div class="features-icon-bg">
@@ -173,7 +182,11 @@
                 level overviews.
               </p>
               <button class="features-item-btn">Read More...</button>
-              <p class="additional-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iusto cupiditate animi rem adipisci suscipit iure quisquam quis dolorum a.</p>
+              <p class="additional-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                iusto cupiditate animi rem adipisci suscipit iure quisquam quis
+                dolorum a.
+              </p>
             </div>
             <div class="features-item">
               <div class="features-icon-bg">
@@ -185,12 +198,16 @@
                 level overviews.
               </p>
               <button class="features-item-btn">Read More...</button>
-              <p class="additional-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iusto cupiditate animi rem adipisci suscipit iure quisquam quis dolorum a.</p>
+              <p class="additional-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                iusto cupiditate animi rem adipisci suscipit iure quisquam quis
+                dolorum a.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <div class="services-top">
             <h2 class="title">Why You Should Choose Us.</h2>
@@ -248,7 +265,7 @@
         <div class="container">
           <div class="directions-wrapper">
             <div class="directions-content">
-              <h2 class="title">
+              <h2 class="title directions-title">
                 You may ask what <br />
                 SEO & why do you need it?
               </h2>
@@ -413,7 +430,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <div class="container">
           <div class="team-top">
             <h2 class="title">Our Expert Team Members</h2>
@@ -434,22 +451,30 @@
               <ul class="social-list team-social-list">
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-facebook social-icon team-social-icon"></span>
+                    <span
+                      class="icon-facebook social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-twitter social-icon team-social-icon"></span>
+                    <span
+                      class="icon-twitter social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-linkedin2 social-icon team-social-icon"></span>
+                    <span
+                      class="icon-linkedin2 social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-google social-icon team-social-icon"></span>
+                    <span
+                      class="icon-google social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
               </ul>
@@ -465,22 +490,30 @@
               <ul class="social-list team-social-list">
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-facebook social-icon team-social-icon"></span>
+                    <span
+                      class="icon-facebook social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-twitter social-icon team-social-icon"></span>
+                    <span
+                      class="icon-twitter social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-linkedin2 social-icon team-social-icon"></span>
+                    <span
+                      class="icon-linkedin2 social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-google social-icon team-social-icon"></span>
+                    <span
+                      class="icon-google social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
               </ul>
@@ -492,22 +525,30 @@
               <ul class="social-list team-social-list">
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-facebook social-icon team-social-icon"></span>
+                    <span
+                      class="icon-facebook social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-twitter social-icon team-social-icon"></span>
+                    <span
+                      class="icon-twitter social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-linkedin2 social-icon team-social-icon"></span>
+                    <span
+                      class="icon-linkedin2 social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-google social-icon team-social-icon"></span>
+                    <span
+                      class="icon-google social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
               </ul>
@@ -523,22 +564,30 @@
               <ul class="social-list team-social-list">
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-facebook social-icon team-social-icon"></span>
+                    <span
+                      class="icon-facebook social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-twitter social-icon team-social-icon"></span>
+                    <span
+                      class="icon-twitter social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-linkedin2 social-icon team-social-icon"></span>
+                    <span
+                      class="icon-linkedin2 social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
                 <li class="social-item team-social-item">
                   <a class="social-link team-social-link" href="#">
-                    <span class="icon-google social-icon team-social-icon"></span>
+                    <span
+                      class="icon-google social-icon team-social-icon"
+                    ></span>
                   </a>
                 </li>
               </ul>
@@ -570,7 +619,7 @@
             <p class="clients-item-position">Web Design</p>
           </div>
           <div class="clients-item">
-            <p class="text">
+            <p class="text clients-item-text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
               dolores et quas molestias excepturi sint cupiditate non provident.
@@ -584,7 +633,7 @@
             <p class="clients-item-position">UI Designer</p>
           </div>
           <div class="clients-item">
-            <p class="text">
+            <p class="text clients-item-text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
               dolores et quas molestias excepturi sint cupiditate non provident.
@@ -598,7 +647,7 @@
             <p class="clients-item-position">Web Design</p>
           </div>
           <div class="clients-item">
-            <p class="text">
+            <p class="text clients-item-text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
               dolores et quas molestias excepturi sint cupiditate non provident.
@@ -612,7 +661,7 @@
             <p class="clients-item-position">Web Design</p>
           </div>
           <div class="clients-item">
-            <p class="text">
+            <p class="text clients-item-text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
               dolores et quas molestias excepturi sint cupiditate non provident.
@@ -626,7 +675,7 @@
             <p class="clients-item-position">Web Design</p>
           </div>
           <div class="clients-item">
-            <p class="text">
+            <p class="text clients-item-text">
               At vero eos et accusamus et iusto odio dignissimos ducimus qui
               blanditiis praesentium voluptatum deleniti atque corrupti quos
               dolores et quas molestias excepturi sint cupiditate non provident.
@@ -641,7 +690,7 @@
           </div>
         </div>
       </section>
-      <section class="news">
+      <section class="news" id="news">
         <div class="news-top">
           <h2 class="title">Our Latest News</h2>
           <p class="text">
@@ -846,7 +895,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-left">
@@ -854,61 +903,104 @@
               <img class="logo-img" src="img/header/logo.png" alt="Logo" />
               <p class="logo-text">Grow<span>Be</span></p>
             </a>
-            <p class="footer-text">
+            <p class="text footer-text">
               Distinctively exploit optimal alignments for intuitive bandwidth.
               Quickly coordinate business through revolutionary.
             </p>
             <ul class="social-list footer-social-list">
-                <li class="social-item footer-social-item">
-                  <a class="social-link footer-social-link" href="#">
-                    <span class="icon-facebook social-icon footer-social-icon"></span>
-                  </a>
-                  
-                </li>
-                <li class="social-item footer-social-item">
-                  <a class="social-link footer-social-link" href="#">
-                    <span class="icon-twitter social-icon footer-social-icon"></span>
-                  </a>
-                </li>
-                <li class="social-item footer-social-item">
-                  <a class="social-link footer-social-link" href="#">
-                    <span class="icon-linkedin2 social-icon footer-social-icon"></span>
-                  </a>
-                </li>
-                <li class="social-item footer-social-item">
-                  <a class="social-link footer-social-link" href="#">
-                    <span class="icon-google social-icon footer-social-icon"></span>
-                  </a>
-                </li>
+              <li class="social-item footer-social-item">
+                <a class="social-link footer-social-link" href="#">
+                  <span
+                    class="icon-facebook social-icon footer-social-icon"
+                  ></span>
+                </a>
+              </li>
+              <li class="social-item footer-social-item">
+                <a class="social-link footer-social-link" href="#">
+                  <span
+                    class="icon-twitter social-icon footer-social-icon"
+                  ></span>
+                </a>
+              </li>
+              <li class="social-item footer-social-item">
+                <a class="social-link footer-social-link" href="#">
+                  <span
+                    class="icon-linkedin2 social-icon footer-social-icon"
+                  ></span>
+                </a>
+              </li>
+              <li class="social-item footer-social-item">
+                <a class="social-link footer-social-link" href="#">
+                  <span
+                    class="icon-google social-icon footer-social-icon"
+                  ></span>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="footer-company">
             <h3 class="title-small footer-title">Our Company</h3>
             <ul class="footer-list">
-              <li class="footer-item"><a href="" class="footer-link">About Us</a></li>
-              <li class="footer-item"><a href="" class="footer-link">Our Services</a></li>
-              <li class="footer-item"><a href="" class="footer-link">Our Plan</a></li>
-              <li class="footer-item"><a href="" class="footer-link">Our Team</a></li>
-              <li class="footer-item"><a href="" class="footer-link">Latest News</a></li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">About Us</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">Our Services</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">Our Plan</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">Our Team</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">Latest News</a>
+              </li>
             </ul>
           </div>
           <div class="footer-services">
             <h3 class="title-small footer-title">Our Services</h3>
             <ul class="footer-list">
-              <li class="footer-item"><a href="" class="footer-link">Digital Marketing</a></li>
-              <li class="footer-item"><a href="" class="footer-link">SEO Optimazation</a></li>
-              <li class="footer-item"><a href="" class="footer-link">Web Development</a></li>
-              <li class="footer-item"><a href="" class="footer-link">Link Building</a></li>
-              <li class="footer-item"><a href="" class="footer-link">Terms & Privacy</a></li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">Digital Marketing</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">SEO Optimazation</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">Web Development</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">Link Building</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="text footer-link">Terms & Privacy</a>
+              </li>
             </ul>
           </div>
           <div class="footer-contacts">
             <h3 class="title-small footer-title">Contact Us</h3>
-            <p class="footer-contacts-text"><span>Location: </span>1370 Orvilly Rot APT, New York, USA</p>
-            <p class="footer-contacts-text"><span>Email: </span><a class="footer-contacts-link" href="mailto:growbeinfo@gmail"></a>growbeinfo@gmail</p>
-            <p class="footer-contacts-text"><span>Phone: </span><a class="footer-contacts-link" href="tel:+324-9332-5018"></a>+324-9332-5018</p>
+            <p class="text footer-contacts-text">
+              <span>Location: </span>1370 Orvilly Rot APT, New York, USA
+            </p>
+            <p class="text footer-contacts-text">
+              <span>Email: </span
+              ><a
+                class="footer-contacts-link"
+                href="mailto:growbeinfo@gmail"
+              ></a
+              >growbeinfo@gmail
+            </p>
+            <p class="text footer-contacts-text">
+              <span>Phone: </span
+              ><a class="footer-contacts-link" href="tel:+324-9332-5018"></a
+              >+324-9332-5018
+            </p>
           </div>
         </div>
-        <p class="footer-down-text">Copyright © GrowBe 2021. All Rights Reserved.</p>
+        <p class="text footer-down-text">
+          Copyright © GrowBe 2021. All Rights Reserved.
+        </p>
       </div>
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>

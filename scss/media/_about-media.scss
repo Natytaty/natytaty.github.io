@@ -1,12 +1,39 @@
-/* @media (max-width: 1050px) {
+@media (max-width: 950px) {
   .about-img {
-    max-width: 530px;
+    width: 50%;
+  }
+
+  .about-info {
+    width: 45%;
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 600px) {
+  .about {
+    padding-top: 30px;
+  }
+
+  .about-title {
+    text-align: center;
+  }
+
+  .about-info-text {
+    text-align: center;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+  }
   .about-img {
-    max-width: 450px;
+    width: 100%;
+  }
+
+  .about-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .btn {
+      align-self: flex-end;
+    }
   }
 }
- */

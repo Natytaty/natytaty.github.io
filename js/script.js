@@ -11,6 +11,28 @@ $(".clients-slider").slick({
   /* fade: true, */
   centerMode: true,
   centerPadding: "200px",
+  responsive: [
+    {
+      breakpoint: 1090,
+      settings: {
+        centerPadding: "100px",
+      },
+    },
+    {
+      breakpoint: 770,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: "200px",
+      },
+    },
+    {
+      breakpoint: 650,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: "50px",
+      },
+    },
+  ],
 });
 
 // Slider
@@ -41,9 +63,33 @@ $(".news-slider").slick({
     {
       breakpoint: 1620,
       settings: {
-        slidesToShow: 2,
-        centerPadding: "50px",
-        centerMode: false,
+        slidesToShow: 1,
+        centerPadding: "300px",
+        centerMode: true,
+      },
+    },
+    {
+      breakpoint: 1230,
+      settings: {
+        centerPadding: "200px",
+      },
+    },
+    {
+      breakpoint: 1030,
+      settings: {
+        centerPadding: "150px",
+      },
+    },
+    {
+      breakpoint: 780,
+      settings: {
+        centerPadding: "100px",
+      },
+    },
+    {
+      breakpoint: 630,
+      settings: {
+        centerPadding: "10px",
       },
     },
   ],
@@ -64,3 +110,36 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//Burger-menu
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".menu");
+const menuItem = document.querySelectorAll(".menu-item");
+const menuShadow = document.querySelector(".menu-shadow");
+
+burger.addEventListener("click", function () {
+  menu.classList.toggle("menu-active");
+  burger.classList.toggle("burger-active");
+  document.body.classList.toggle("no-scroll");
+  menuShadow.classList.toggle("active");
+});
+
+menuItem.forEach((item) => {
+  item.addEventListener("click", function () {
+    menu.classList.toggle("menu-active");
+    burger.classList.toggle("burger-active");
+    menuShadow.classList.toggle("active");
+  });
+});
+
+document.addEventListener("click", function (e) {
+  if (
+    e.target.closest(".menu") === null &&
+    e.target.closest(".burger") === null
+  ) {
+    menu.classList.remove("menu-active");
+    burger.classList.remove("burger-active");
+    document.body.classList.remove("no-scroll");
+    menuShadow.classList.remove("active");
+  }
+});

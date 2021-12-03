@@ -59,35 +59,40 @@
   content: "⌵";
   display: inline-block;
   margin-left: 5px;
+  transition: 0.3s;
 }
 
 .subnav {
-  /* visibility: hidden;
-  opacity: 0; */
-  /* user-select: none;
-  pointer-events: none; */
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  /* display: none; */
   transition: 0.4s;
   position: absolute;
   background: #f25822;
   top: 25px;
   left: 0;
   width: 90px;
+  z-index: 50;
   list-style: none;
   border-radius: 0 0 8px 8px;
 }
 
 .menu-item {
   &:hover {
+    .menu-link-subnav::after {
+      transform: rotate(180deg);
+    }
     .subnav {
-      /* visibility: visible;
-      opacity: 1; */
-      display: block;
-      /* user-select: all;
-      pointer-events: all; */
-      &:hover {
+      visibility: visible;
+      opacity: 1;
+      /* display: block; */
+      user-select: auto;
+      pointer-events: all;
+      /*  &:hover {
         display: block;
-      }
+      } */
     }
   }
 }

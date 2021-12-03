@@ -15,7 +15,7 @@
 .plans-wrapper {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .plans-card {
@@ -23,7 +23,7 @@
   max-width: 370px;
   width: 100%;
   background: #ffff;
-  padding: 70px 20px;
+  padding: 70px 10px;
   height: 514px;
   transition: 0.3s;
   &:hover {

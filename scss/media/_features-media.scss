@@ -17,8 +17,30 @@
   }
 }
 
-@media (max-width: 730px) {
-  /* .features-wrapper {
+@media (max-width: 530px) {
+  .features {
+    padding: 30px 0;
+  }
+
+  .features-wrapper {
     flex-direction: column;
-  } */
+  }
+
+  .features-item {
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 auto;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  .features-icon-bg {
+    display: inline-block;
+  }
+
+  .features-item-text {
+    width: auto;
+    margin-bottom: 10px;
+  }
 }

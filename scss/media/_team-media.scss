@@ -1,0 +1,24 @@
+@media (max-width: 800px) {
+  .team {
+    padding: 40px;
+  }
+
+  .team-text {
+    margin-bottom: 20px;
+  }
+
+  .team-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-item {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .team {
+    padding: 30px;
+  }
+}

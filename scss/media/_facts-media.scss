@@ -1,0 +1,47 @@
+@media (max-width: 900px) {
+  .facts {
+    padding: 50px 0;
+  }
+
+  .facts-number {
+    font-size: 50px;
+  }
+
+  .facts-text {
+    font-size: 15px;
+  }
+
+  .facts-ellipse {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 790px) {
+  .facts-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .facts-number {
+    font-size: 40px;
+  }
+
+  .facts-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .facts-wrapper {
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .facts-ellipse {
+    display: none;
+  }
+}
